@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.hzrobot.aoputv.widget.FullScreenVideoView
+        android:id="@+id/video_player"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:backgroundTint="#000000" />
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="120dip"
+            android:layout_height="120dip"
+            android:src="@mipmap/icon_no_video" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+            android:text="暂无视频"
+            android:textColor="#ffffff"
+            android:textSize="18dip" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/lv_video"
+        android:layout_width="400px"
+        android:layout_height="match_parent"
+        android:background="#40cccccc"
+        android:divider="@null"
+        android:visibility="gone" />
+
+
+</FrameLayout>
